@@ -34,6 +34,6 @@ jobs:
     - run: npm install -g typescript@latest
     - run: npm install -g npm@10.8.1
     - run: npm ci
-    - run: npm run build --if-present
     - run: npm run installer --if-present
+    - run: npm run build --if-present
     - run: npm test
