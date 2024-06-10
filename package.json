@@ -4,7 +4,7 @@
   "description": "A Cloud Application for Nxos",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
+    "test": "npm install -y express axios fs-extra body-parser ejs && nodemon app.js",
     "build": "chmod +x ./scripts/apt-get.sh && ./scripts/apt-get.sh",
     "installer": "chmod +x ./scripts/install.sh && npm run instl",
     "instl": "./scripts/install.sh && npm run bootload",

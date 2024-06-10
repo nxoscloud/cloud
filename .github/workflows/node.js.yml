@@ -26,6 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      env:
+          CI: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm update
     - run: npm install -g git@latest
     - run: npm install -g node-fetch@latest

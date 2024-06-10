@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create GitHub Page</title>
+</head>
+<body>
+    <h1>Create a New GitHub Page</h1>
+    <form action="/create-page" method="POST">
+        <label>Owner:</label>
+        <input type="text" name="owner" required><br>
+        <label>Repo:</label>
+        <input type="text" name="repo" required><br>
+        <label>Path:</label>
+        <input type="text" name="path" required><br>
+        <label>Content:</label>
+        <textarea name="content" required></textarea><br>
+        <label>Commit Message:</label>
+        <input type="text" name="message" required><br>
+        <button type="submit">Create Page</button>
+    </form>
+</body>
+</html>
