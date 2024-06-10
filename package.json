@@ -1,0 +1,15 @@
+{
+  "name": "cloud",
+  "version": "1.0.0",
+  "description": "A Cloud Application for Nxos",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "build": "chmod +x ./scripts/apt-get.sh && ./scripts/apt-get.sh",
+    "installer": "chmod +x ./scripts/install.sh && npm run instl",
+    "instl": "./scripts/install.sh && npm run bootload",
+    "bootload": "chmod +x ./scripts/build.sh && ./scripts/build.sh"
+  },
+  "author": "Nxium Develoments & Nxoscloud",
+  "license": "ISC"
+}
