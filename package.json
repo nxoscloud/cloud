@@ -4,12 +4,19 @@
   "description": "A Cloud Application for Nxos",
   "main": "app.js",
   "scripts": {
-    "test": "npm install -y express axios fs-extra body-parser ejs && nodemon app.js",
+    "test": "npm install -y express axios fs-extra body-parser ejs",
     "build": "chmod +x ./scripts/apt-get.sh && ./scripts/apt-get.sh",
     "installer": "chmod +x ./scripts/install.sh && npm run instl",
     "instl": "./scripts/install.sh && npm run bootload",
     "bootload": "chmod +x ./scripts/build.sh && ./scripts/build.sh"
   },
   "author": "Nxium Develoments & Nxoscloud",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0"
+  }
 }

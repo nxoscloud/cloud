@@ -28,7 +28,7 @@ for item in "${items[@]}"; do
     display_loading_bar
     # Here you can add the command to install the item, for example:
     # sudo apt-get install -y $item
-    # npm install -y $item
+    npm install -y $item
     sleep 1  # Simulating installation time
 done
 
@@ -38,7 +38,7 @@ for update in "${updates[@]}"; do
     display_loading_bar
     # Here you can add the command to install the item, for example:
     # sudo apt-get install -y $item
-    # npm update -y $update
+    npm update -y $update
     sleep 1  # Simulating installation time
 done
 
