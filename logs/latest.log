@@ -1,0 +1,585 @@
+[07:07:23] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:07:24] [ServerMain/WARN]: Invalid path in datapack: fokastudio:worldgen/biome/README.md, ignoring
+[07:07:26] [Worker-Main-1/ERROR]: Couldn't load tag minecraft:placeable_blocks_1_20_2 as it is missing following references: minecraft:grass (from file/tool-trims-DP-v2-0-2c-1-20.zip)
+[07:07:26] [Worker-Main-1/ERROR]: Couldn't load tag stellarity:non_solid as it is missing following references: minecraft:grass (from file/Stellarity-v2-0d.zip)
+[07:07:27] [Worker-Main-1/ERROR]: Couldn't parse element loot_tables:stellarity:pandoras_barrel/drops/plains - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:grass
+[07:07:28] [Worker-Main-1/ERROR]: Couldn't parse element loot_tables:stellarity:items/golden_chorus_fruit - Not a json array: {"function":"minecraft:set_name","entity":"this","name":{"translate":"stellarity.items.golden_chorus_fruit","fallback":"Golden Chorus Fruit","color":"light_cyan","italic":false}}
+[07:07:28] [Worker-Main-1/ERROR]: Couldn't parse element loot_tables:stellarity:pandoras_barrel/drops/birch_forest - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:grass
+[07:07:28] [Worker-Main-1/ERROR]: Couldn't parse element loot_tables:stellarity:pandoras_barrel/drops/savanna - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:grass
+[07:07:29] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:stellarity:end_city/top_tower}.pools[0].entries[2]: Unknown loot table called stellarity:items/golden_chorus_fruit
+[07:07:29] [ServerMain/WARN]: Found loot table element validation problem in {loot_tables:stellarity:mobs/fokastudio}.pools[0].entries[0]: Unknown loot table called stellarity:items/golden_chorus_fruit
+[07:07:29] [ServerMain/INFO]: Loaded 1191 recipes
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/other/watermark
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Invalid chat component: Not a JSON object: ["",{"translate":"                                             \n","strikethrough":true,"color":"gray"},{"translate":"Thanks for installing ","color":"#80FFB0"},{"translate":"Ultris v5.6.9","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/ultris-minecraft-boss-expansion/"},"hoverEvent":{"action":"show_text","contents":["Click to download"]}},{"translate":"\nTo summon bosses with cheats, use ","color":"#B0FFB0","hoverEvent":{"action":"show_text","contents":[]}},{"translate":"/function 1_splatus:ultris/admin_menu","hoverEvent":{"action":"show_text","contents":[{"translate":"Click to insert the command in chat"}]},"clickEvent":{"action":"suggest_command","value":"/function 1_splatus:ultris/admin_menu"},"color":"#c4ffc4"},{"translate":"","color":"#B0FFB0"},{"translate":"\n                                             ","strikethrough":true,"color":"gray"},{"translate":"\nJoin the Discord -> ","color":"yellow"},{"translate":"Open Link","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://discord.gg/XZVARKkjwt"},"hoverEvent":{"action":"show_text","contents":["Click to join"]}},{"translate":"","color":"#80FFB0"},{"translate":"\n\nSupport Me On Ko-fi -> ","color":"yellow"},{"translate":"Open Link\n","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://ko-fi.com/limesplatus"},"hoverEvent":{"action":"show_text","contents":["Click to open url"]}},{"translate":"","color":"#80FFB0"}] at position 1557: ...#80FFB0"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Invalid chat component: Not a JSON object: ["",{"translate":"                                             \n","strikethrough":true,"color":"gray"},{"translate":"Thanks for installing ","color":"#80FFB0"},{"translate":"Ultris v5.6.9","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/ultris-minecraft-boss-expansion/"},"hoverEvent":{"action":"show_text","contents":["Click to download"]}},{"translate":"\nTo summon bosses with cheats, use ","color":"#B0FFB0","hoverEvent":{"action":"show_text","contents":[]}},{"translate":"/function 1_splatus:ultris/admin_menu","hoverEvent":{"action":"show_text","contents":[{"translate":"Click to insert the command in chat"}]},"clickEvent":{"action":"suggest_command","value":"/function 1_splatus:ultris/admin_menu"},"color":"#c4ffc4"},{"translate":"","color":"#B0FFB0"},{"translate":"\n                                             ","strikethrough":true,"color":"gray"},{"translate":"\nJoin the Discord -> ","color":"yellow"},{"translate":"Open Link","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://discord.gg/XZVARKkjwt"},"hoverEvent":{"action":"show_text","contents":["Click to join"]}},{"translate":"","color":"#80FFB0"},{"translate":"\n\nSupport Me On Ko-fi -> ","color":"yellow"},{"translate":"Open Link\n","underlined":true,"color":"#8AB7FF","clickEvent":{"action":"open_url","value":"https://ko-fi.com/limesplatus"},"hoverEvent":{"action":"show_text","contents":["Click to open url"]}},{"translate":"","color":"#80FFB0"}] at position 1557: ...#80FFB0"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/sinisteraura/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"SinisterAura","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 286: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"SinisterAura","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 286: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/2ultrisconqueror/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"2UltrisConqueror","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 290: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"2UltrisConqueror","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 290: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function techno.shared:gui/main_menu
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Invalid chat component: Not a JSON object: ["","\n",{"translate":"Technodono's universal resourcepack not detected!","with":[{"text":"[______Installed_datapacks______]","color":"white","italic":"false","font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":" ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"  ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"Download it to access datapack menu's and settings!","with":[{"text":"[__________Contributors__________]","color":"white","italic":false,"font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":"   ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n",{"translate":"    ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n"] at position 1980: ...}}]},"\n"]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 4: Invalid chat component: Not a JSON object: ["","\n",{"translate":"Technodono's universal resourcepack not detected!","with":[{"text":"[______Installed_datapacks______]","color":"white","italic":"false","font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":" ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"  ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"Download it to access datapack menu's and settings!","with":[{"text":"[__________Contributors__________]","color":"white","italic":false,"font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":"   ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n",{"translate":"    ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n"] at position 1980: ...}}]},"\n"]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function stellarity:init
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 139: Invalid chat component: Invalid color name: pink at position 112: ...r":"pink"}<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 139: Invalid chat component: Invalid color name: pink at position 112: ...r":"pink"}<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/awaken/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"Awaken","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 280: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"Awaken","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 280: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/sealedsecrets/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"SealedSecrets","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 287: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"SealedSecrets","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 287: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/ultrisconqueror/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"ultrisconqueror","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 289: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"ultrisconqueror","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 289: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function 1_splatus:ultris/music/root/sealedsecretsv2/uninstall
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"sealedsecrets2","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 288: ..."yellow"}]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 5: Invalid chat component: Not a JSON object: ["",{"translate":"[NBS] ","color":"gold","bold":"true"},{"translate":"Data pack ","color":"yellow"},{"translate":"sealedsecrets2","color":"gold","underlined":"true"},{"translate":" uninstalled successfully. You may now remove it from your data pack folder.","color":"yellow"}] at position 288: ..."yellow"}]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Failed to load function techno.shared:load
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 11: Invalid chat component: Not a JSON object: ["","\n",{"translate":"Technodono's universal resourcepack not detected!","with":[{"text":"[______Installed_datapacks______]","color":"white","italic":"false","font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":" ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"  ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"Download it to access datapack menu's and settings!","with":[{"text":"[__________Contributors__________]","color":"white","italic":false,"font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":"   ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n",{"translate":"    ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n"] at position 1980: ...}}]},"\n"]<--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 11: Invalid chat component: Not a JSON object: ["","\n",{"translate":"Technodono's universal resourcepack not detected!","with":[{"text":"[______Installed_datapacks______]","color":"white","italic":"false","font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":" ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"  ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/list_packs/list_packs_1"}}]},"\n",{"translate":"Download it to access datapack menu's and settings!","with":[{"text":"[__________Contributors__________]","color":"white","italic":false,"font":"techno.shared:button"}],"italic":true,"color":"red"},"\n",{"translate":"   ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n",{"translate":"    ","with":[{"text":"","font":"techno.shared:button","clickEvent":{"action":"run_command","value":"/function techno.shared:gui/contributors"}}]},"\n"] at position 1980: ...}}]},"\n"]<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$2(ServerFunctionLibrary.java:91) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[07:07:29] [ServerMain/ERROR]: Couldn't load tag minecraft:load as it is missing following references: techno.shared:load (from file/Dungeons+ V1.8.4.zip), stellarity:init (from file/Stellarity-v2-0d.zip)
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/ultrawither: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/shulkerstonekill: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/giantrevive: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/soul_trapped_all: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/illusioner2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/blazetower: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/root: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/keeper1: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/keeper2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/ultrawitherkill: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/phantom_fight2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/illusioner: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/command: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/phantom_fight: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement stellarity:nether/charge_anchor_end: Not a json array: {"condition":"minecraft:location_check","predicate":{"dimension":"minecraft:the_end","block":{"blocks":["minecraft:respawn_anchor"],"state":{"charges":4}}}}; Not a json array: {"condition":"minecraft:location_check","predicate":{"dimension":"minecraft:the_end","block":{"blocks":["minecraft:respawn_anchor"],"state":{"charges":{"min":1}}}}} missed input: {"1":{"trigger":"minecraft:item_used_on_block","conditions":{"location":[{"condition":"minecraft:location_check","predicate":{"dimension":"minecraft:the_end","block":{"blocks":["minecraft:respawn_anchor"],"state":{"charges":{"min":1}}}}},{"condition":"minecraft:inverted","term":{"condition":"minecraft:match_tool","predicate":{"items":["minecraft:glowstone"]}}}]}},"2":{"trigger":"minecraft:item_used_on_block","conditions":{"location":[{"condition":"minecraft:location_check","predicate":{"dimension":"minecraft:the_end","block":{"blocks":["minecraft:respawn_anchor"],"state":{"charges":4}}}},{"condition":"minecraft:match_tool","predicate":{"items":["minecraft:glowstone"]}}]}}}
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/lab: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/shulkerstone: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/secret/untouchable: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/endpyramid: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/phantom2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/ender: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/lab2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/lab3: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/giantdefeat: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/shulkerstone2: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/kingblaze: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/secret/shulkerstoneglow: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/completed: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/eye_of_ender: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/sanctum_soul_village: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/blazepath/kingblazekill: Invalid color value: #s
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/soul_trapped: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/illusionerkill: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/enderkill: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/sanctum/soul_find: Invalid color name: 
+[07:07:30] [ServerMain/ERROR]: Parsing error loading custom advancement 1_splatus:ultris/phantom: Invalid color name: 
+[07:07:30] [ServerMain/INFO]: Loaded 1708 advancements
+[07:07:30] [ServerMain/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: minecraft:placeable_blocks_1_20_2, stellarity:non_solid
+[07:07:30] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[07:07:30] [Server thread/INFO]: Loading properties
+[07:07:30] [Server thread/INFO]: This server is running Paper version git-Paper-497 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: d8d54d9 on ver/1.20.4)
+[07:07:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:07:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:07:32] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[07:07:32] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[07:07:33] [Server thread/INFO]: Default game type: SURVIVAL
+[07:07:33] [Server thread/INFO]: Generating keypair
+[07:07:33] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[07:07:33] [Server thread/INFO]: Using epoll channel type
+[07:07:33] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:07:33] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[07:07:33] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'SpawnLogic' for files 'plugins/SpawnLogic-1.0.jar' and 'plugins/SpawnLogic-1.1-SNAPSHOT.jar' in 'plugins'
+[07:07:34] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loading 4 libraries... please wait
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.8.20/kotlin-stdlib-1.8.20.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.20/kotlin-stdlib-common-1.8.20.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.8.20/kotlin-reflect-1.8.20.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.7.1/kotlinx-coroutines-core-1.7.1.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.7.1/kotlinx-coroutines-bom-1.7.1.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.7.1/kotlinx-coroutines-core-jvm-1.7.1.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/23.0.0/annotations-23.0.0.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.20/kotlin-stdlib-jdk8-1.8.20.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.20/kotlin-stdlib-jdk7-1.8.20.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/corundumstudio/socketio/netty-socketio/1.7.19/netty-socketio-1.7.19.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-parent/4.1.63.Final/netty-parent-4.1.63.Final.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.pom
+[07:07:35] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.63.Final/netty-transport-native-epoll-4.1.63.Final.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.21/slf4j-parent-1.7.21.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.12.3/jackson-base-2.12.3.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.12.3/jackson-bom-2.12.3.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.12/jackson-parent-2.12.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/41/oss-parent-41.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.pom
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.8.20/kotlin-stdlib-1.8.20.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.20/kotlin-stdlib-common-1.8.20.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-2/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-reflect/1.8.20/kotlin-reflect-1.8.20.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.20/kotlin-stdlib-jdk8-1.8.20.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.20/kotlin-stdlib-jdk7-1.8.20.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/corundumstudio/socketio/netty-socketio/1.7.19/netty-socketio-1.7.19.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.7.1/kotlinx-coroutines-core-jvm-1.7.1.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.7.1/kotlinx-coroutines-core-1.7.1.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-3/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-epoll/4.1.63.Final/netty-transport-native-epoll-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-0/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-1/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar
+[07:07:36] [BasicRepositoryConnector-repo.maven.apache.org-0-4/INFO]: [SpigotLibraryLoader] Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlin/kotlin-stdlib/1.8.20/kotlin-stdlib-1.8.20.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlin/kotlin-stdlib-common/1.8.20/kotlin-stdlib-common-1.8.20.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlin/kotlin-reflect/1.8.20/kotlin-reflect-1.8.20.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlinx/kotlinx-coroutines-core/1.7.1/kotlinx-coroutines-core-1.7.1.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.7.1/kotlinx-coroutines-core-jvm-1.7.1.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.20/kotlin-stdlib-jdk8-1.8.20.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.20/kotlin-stdlib-jdk7-1.8.20.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/com/corundumstudio/socketio/netty-socketio/1.7.19/netty-socketio-1.7.19.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.jar
+[07:07:36] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-transport-native-epoll/4.1.63.Final/netty-transport-native-epoll-4.1.63.Final.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/com/fasterxml/jackson/core/jackson-core/2.12.3/jackson-core-2.12.3.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/com/fasterxml/jackson/core/jackson-databind/2.12.3/jackson-databind-2.12.3.jar
+[07:07:37] [Server thread/INFO]: [SpigotLibraryLoader] [Typewriter] Loaded library /workspaces/cloud/libraries/com/fasterxml/jackson/core/jackson-annotations/2.12.3/jackson-annotations-2.12.3.jar
+[07:07:37] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.3-SNAPSHOT
+[07:07:37] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.3-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[07:07:37] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[07:07:38] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[07:07:38] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.1.0
+[07:07:38] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.20.4) has not yet been tested! Proceed with caution.
+[07:07:39] [Server thread/ERROR]:   [ProtocolLib] INTERNAL ERROR: Cannot load ProtocolLib.
+  If this problem hasn't already been reported, please open a ticket
+  at https://github.com/dmulloy2/ProtocolLib/issues with the following data:
+  Stack Trace:
+  java.lang.IllegalArgumentException: Unable to find a field that matches {modifiers=[required: 10000, banned: 1000], type={ type input instanceof interface java.util.Map }}
+  	at ProtocolLib.jar//com.comphenix.protocol.reflect.FuzzyReflection.getField(FuzzyReflection.java:352)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.createNewRegister(PacketRegistry.java:188)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.initialize(PacketRegistry.java:292)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.packet.PacketRegistry.getClientPacketTypes(PacketRegistry.java:327)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterManager.<init>(PacketFilterManager.java:120)
+  	at ProtocolLib.jar//com.comphenix.protocol.injector.PacketFilterBuilder.build(PacketFilterBuilder.java:121)
+  	at ProtocolLib.jar//com.comphenix.protocol.ProtocolLib.onLoad(ProtocolLib.java:183)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59)
+  	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18)
+  	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39)
+  	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36)
+  	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.loadPlugins(CraftServer.java:507)
+  	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:274)
+  	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1131)
+  	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319)
+  	at java.base/java.lang.Thread.run(Thread.java:1583)
+  Dump:
+  Parameters: 
+    [NULL]
+  Sender:
+    com.comphenix.protocol.ProtocolLib@48bcc992[
+      statistics=<null>
+      packetTask=<null>
+      tickCounter=0
+      configExpectedMod=-1
+      updater=com.comphenix.protocol.updater.SpigotUpdater@63590608
+      redirectHandler=<null>
+      scheduler=com.comphenix.protocol.scheduler.DefaultScheduler@4d87a3a8
+      commandProtocol=<null>
+      commandPacket=<null>
+      commandFilter=<null>
+      packetLogging=<null>
+      skipDisable=false
+      isEnabled=false
+      loader=io.papermc.paper.plugin.manager.DummyBukkitPluginLoader@6ded314d
+      server=CraftServer{serverName=Paper,serverVersion=git-Paper-497,minecraftVersion=1.20.4}
+      file=plugins/ProtocolLib.jar
+      description=org.bukkit.plugin.PluginDescriptionFile@57809f92
+      pluginMeta=org.bukkit.plugin.PluginDescriptionFile@57809f92
+      dataFolder=plugins/ProtocolLib
+      classLoader=PluginClassLoader{plugin=ProtocolLib v5.1.0, pluginEnabled=false, url=plugins/ProtocolLib.jar}
+      naggable=true
+      newConfig=YamlConfiguration[path='', root='YamlConfiguration']
+      configFile=plugins/ProtocolLib/config.yml
+      logger=com.destroystokyo.paper.utils.PaperPluginLogger@12f010c5
+      lifecycleEventManager=io.papermc.paper.plugin.lifecycle.event.PaperLifecycleEventManager@7db8969
+      allowsLifecycleRegistration=true
+    ]
+  Version:
+    ProtocolLib v5.1.0
+  Java Version:
+    21.0.3
+  Server:
+    git-Paper-497 (MC: 1.20.4)
+
+[07:07:39] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.18+6616-abda4e0
+[07:07:40] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@48fb3d9b]
+[07:07:40] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.8.0
+[07:07:40] [Server thread/INFO]: [RedLib] Loading server plugin RedLib v2023-12-22 19:59
+[07:07:40] [Server thread/INFO]: [Storyline] Loading server plugin Storyline v1.1
+[07:07:40] [Server thread/INFO]: [LevelledMobs] Loading server plugin LevelledMobs v3.14.1 b817
+[07:07:40] [Server thread/INFO]: [rbl-papermake] Loading server plugin rbl-papermake v1.0.6pm-1.1.2rv
+[07:07:40] [Server thread/INFO]: [SpawnLogic] Loading server plugin SpawnLogic v1.0
+[07:07:40] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.34
+[07:07:40] [Server thread/INFO]: [TerraformGenerator] Loading server plugin TerraformGenerator v13.0.4
+[07:07:40] [Server thread/INFO]: [BetterStructures] Loading server plugin BetterStructures v1.6.7
+[07:07:40] [Server thread/INFO]: [BetterStructures] WorldGuard is not enabled! WorldGuard is recommended when using the EliteMobs integration.
+[07:07:40] [Server thread/INFO]: [Typewriter] Loading server plugin Typewriter v0.4.0
+[07:07:40] [Server thread/WARN]: [Typewriter] 
+---------------{ No Adapters Loaded }---------------
+
+No adapters were loaded. 
+You should always have at least the BasicAdapter loaded.
+
+--------------------------------------------------
+[07:07:40] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v3.0.6-SNAPSHOT
+[07:07:40] [Server thread/INFO]: [AureliumSkills] Loading server plugin AureliumSkills vBeta 1.3.24
+[07:07:40] [Server thread/INFO]: [rbl-core] Loading server plugin rbl-core v1.1.1-indev
+[07:07:40] [Server thread/INFO]: [Vanillabosses] Loading server plugin Vanillabosses v2.5.0
+[07:07:40] [Server thread/INFO]: [GodItems] Loading server plugin GodItems v3.0.0-ALPHA2
+[07:07:40] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.1.0
+[07:07:40] [Server thread/ERROR]: ******************************************************
+[07:07:40] [Server thread/ERROR]: *** ProtocolLib does not support plugin reloaders! ***
+[07:07:40] [Server thread/ERROR]: *** Please use the built-in reload command!        ***
+[07:07:40] [Server thread/ERROR]: ******************************************************
+[07:07:40] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.1.0
+[07:07:40] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
+[07:07:40] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:07:41] [Server thread/INFO]: WEPIF: Updated config file
+[07:07:41] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[07:07:41] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R3.PaperweightAdapter as the Bukkit adapter
+[07:07:43] [Server thread/INFO]: [RedLib] Enabling RedLib v2023-12-22 19:59
+[07:07:43] [Server thread/INFO]: [TerraformGenerator] Enabling TerraformGenerator v13.0.4
+[07:07:43] [Server thread/INFO]: [TerraformGenerator] Custom Logger Initialized
+[07:07:43] [Server thread/INFO]: [TerraformGenerator] bStats Metrics enabled.
+[07:07:43] [Server thread/INFO]: [TerraformGenerator] Detected version: v1_20_R3, number: 20.3
+[07:07:44] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v3.0.6-SNAPSHOT
+[07:07:44] [Server thread/INFO]: Preparing level "world"
+[07:07:46] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:07:46] [Server thread/INFO]: Time elapsed: 473 ms
+[07:07:46] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:07:46] [Server thread/INFO]: Time elapsed: 137 ms
+[07:07:46] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:07:47] [Server thread/INFO]: Time elapsed: 246 ms
+[07:07:47] [Server thread/INFO]: Preparing start region for dimension deeper_dark:deeper_dark
+[07:07:47] [Server thread/INFO]: Time elapsed: 112 ms
+[07:07:47] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.3-SNAPSHOT
+[07:07:47] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3/1.20.4 (765)
+[07:07:47] [Server thread/WARN]: [ViaVersion] ViaVersion does not have any compatible versions for this server version!
+[07:07:47] [Server thread/WARN]: [ViaVersion] Please remember that ViaVersion only adds support for versions newer than the server version.
+[07:07:47] [Server thread/WARN]: [ViaVersion] If you need support for older versions you may need to use one or more ViaVersion addons too.
+[07:07:47] [Server thread/WARN]: [ViaVersion] In that case please read the ViaVersion resource page carefully or use https://viaversion.com/setup
+[07:07:47] [Server thread/WARN]: [ViaVersion] and if you're still unsure, feel free to join our Discord-Server for further assistance.
+[07:07:47] [Server thread/INFO]: [Skript] Enabling Skript v2.8.0
+[07:07:48] [Server thread/INFO]: [Skript] You're currently running a custom Skript version. No updates will be automatically installed.
+[07:08:12] [Server thread/INFO]: [Skript] Loaded 232650 aliases in 24172ms
+[07:08:13] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[07:08:13] [Server thread/INFO]: [Storyline] Enabling Storyline v1.1
+[07:08:13] [Server thread/INFO]: [Storyline] [STDOUT] §f§r[Storyline] §a§l0 §rstories loaded.
+[07:08:13] [Server thread/WARN]: Nag author(s): '[reflexlabs]' of 'Storyline v1.1' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[07:08:13] [Server thread/ERROR]: Error occurred while enabling Storyline v1.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: net/milkbowl/vault/economy/Economy
+	at me.reflexlabs.storyline.MainManager.setupEconomy(MainManager.java:64) ~[Storyline.jar:?]
+	at me.reflexlabs.storyline.MainManager.onEnable(MainManager.java:39) ~[Storyline.jar:?]
+	at me.reflexlabs.storyline.Storyline.onEnable(Storyline.java:20) ~[Storyline.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: net.milkbowl.vault.economy.Economy
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 15 more
+[07:08:13] [Server thread/INFO]: [Storyline] Disabling Storyline v1.1
+[07:08:13] [Server thread/INFO]: [Storyline] [STDOUT] [Storyline] plugin has been disabled.
+[07:08:13] [Server thread/INFO]: [LevelledMobs] Enabling LevelledMobs v3.14.1 b817
+[07:08:13] [Server thread/INFO]: LevelledMobs: Using NMS version v1_20_R3 for nametag support
+[07:08:13] [Server thread/INFO]: LevelledMobs: File Loader: Loading files...
+[07:08:13] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'rules.yml'...
+[07:08:13] [Server thread/INFO]: LevelledMobs: Current rules hash: 36ddd7d0952cd4bc9936f1bc81d179d5c711c76f50c74c29ece755c215d98822
+[07:08:13] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'settings.yml'...
+[07:08:13] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'messages.yml'...
+[07:08:13] [Server thread/INFO]: LevelledMobs: Listeners: Registering event listeners...
+[07:08:13] [Server thread/INFO]: LevelledMobs: Commands: Registering commands...
+[07:08:13] [Server thread/INFO]: LevelledMobs: Running misc procedures
+[07:08:13] [Server thread/INFO]: LevelledMobs: Tasks: Starting async nametag auto update task...
+[07:08:13] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'customdrops.yml'...
+[07:08:13] [Server thread/INFO]: LevelledMobs: Start-up complete (took 372ms)
+[07:08:13] [Server thread/INFO]: [rbl-papermake] Enabling rbl-papermake v1.0.6pm-1.1.2rv
+[07:08:13] [Server thread/INFO]: [SpawnLogic] Enabling SpawnLogic v1.0
+[07:08:13] [Server thread/INFO]: [SpawnLogic] SpawnLogic Enabled
+[07:08:13] [Server thread/INFO]: [spark] Enabling spark v1.10.34
+[07:08:14] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[07:08:14] [Server thread/INFO]: [spark] Starting background profiler...
+[07:08:15] [Server thread/INFO]: [BetterStructures] Enabling BetterStructures v1.6.7
+[07:08:15] [Server thread/INFO]: [BetterStructures]     ____       __  __            _____ __                  __                      
+[07:08:15] [Server thread/INFO]: [BetterStructures]    / __ )___  / /_/ /____  _____/ ___// /________  _______/ /___  __________  _____
+[07:08:15] [Server thread/INFO]: [BetterStructures]   / __  / _ \/ __/ __/ _ \/ ___/\__ \/ __/ ___/ / / / ___/ __/ / / / ___/ _ \/ ___/
+[07:08:15] [Server thread/INFO]: [BetterStructures]  / /_/ /  __/ /_/ /_/  __/ /   ___/ / /_/ /  / /_/ / /__/ /_/ /_/ / /  /  __(__  ) 
+[07:08:15] [Server thread/INFO]: [BetterStructures] /_____/\___/\__/\__/\___/_/   /____/\__/_/   \__,_/\___/\__/\__,_/_/   \___/____/
+[07:08:15] [Server thread/INFO]: [BetterStructures] Initialized version 1.6.7!
+[07:08:17] [Server thread/INFO]: [Typewriter] Enabling Typewriter v0.4.0
+[07:08:17] [Server thread/WARN]: [Typewriter] ProtocolLib is not enabled, Typewriter will not work without it. Shutting down...
+[07:08:17] [Server thread/INFO]: [Typewriter] Disabling Typewriter v0.4.0
+[07:08:17] [Server thread/ERROR]: Error occurred while disabling Typewriter v0.4.0
+java.lang.NoClassDefFoundError: com/comphenix/protocol/events/ListenerPriority
+	at me.gabber235.typewriter.interaction.ChatHistoryHandler.<init>(ChatHistoryHandler.kt:28) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter$onLoad$modules$1$19.invoke(Typewriter.kt:68) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter$onLoad$modules$1$19.invoke(Typewriter.kt:68) ~[typewriter.jar:?]
+	at org.koin.core.instance.InstanceFactory.create(InstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory.create(SingleInstanceFactory.kt:46) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory$get$1.invoke(SingleInstanceFactory.kt:53) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory$get$1.invoke(SingleInstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.mp.KoinPlatformTools.synchronized(KoinPlatformTools.kt:20) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory.get(SingleInstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.core.registry.InstanceRegistry.resolveInstance$koin_core(InstanceRegistry.kt:116) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.resolveValue(Scope.kt:246) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.resolveInstance(Scope.kt:231) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.get(Scope.kt:210) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter.onDisableAsync(Typewriter.kt:259) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin$onDisable$1.invokeSuspend(SuspendingJavaPlugin.kt:49) ~[typewriter.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[typewriter.jar:?]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[typewriter.jar:?]
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onDisable(SuspendingJavaPlugin.kt:48) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:290) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:223) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:537) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at me.gabber235.typewriter.Typewriter.onEnableAsync(Typewriter.kt:88) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin$onEnable$1.invokeSuspend(SuspendingJavaPlugin.kt:38) ~[typewriter.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[typewriter.jar:?]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[typewriter.jar:?]
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onEnable(SuspendingJavaPlugin.kt:37) ~[typewriter.jar:?]
+	at lirand.api.architecture.KotlinPlugin.onEnable(KotlinPlugin.kt:13) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: com.comphenix.protocol.events.ListenerPriority
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 52 more
+[07:08:17] [Server thread/ERROR]: Error occurred while enabling Typewriter v0.4.0 (Is it up to date?)
+java.lang.RuntimeException: Plugin Typewriter attempted to start a new coroutine session while being disabled. Dispatchers such as plugin.minecraftDispatcher and plugin.asyncDispatcher are using the BukkitScheduler, which is already disposed at this point of time. If you are starting a coroutine in onDisable, consider using runBlocking or a different plugin.mcCoroutineConfiguration.shutdownStrategy. See https://shynixn.github.io/MCCoroutine/wiki/site/plugindisable for details.
+	at com.github.shynixn.mccoroutine.bukkit.impl.MCCoroutineImpl.startCoroutineSession(MCCoroutineImpl.kt:43) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.impl.MCCoroutineImpl.getCoroutineSession(MCCoroutineImpl.kt:19) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onEnable(SuspendingJavaPlugin.kt:41) ~[typewriter.jar:?]
+	at lirand.api.architecture.KotlinPlugin.onEnable(KotlinPlugin.kt:13) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[07:08:17] [Server thread/INFO]: [AureliumSkills] Enabling AureliumSkills vBeta 1.3.24
+[07:08:17] [Server thread/INFO]: [AureliumSkills] Loaded 194 config options in 0 ms
+[07:08:17] [Server thread/INFO]: [AureliumSkills] Loaded 312 sources and 10 tags in 18ms
+[07:08:17] [Server thread/INFO]: [AureliumSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[07:08:18] [Server thread/INFO]: [AureliumSkills] Loading languages...
+[07:08:22] [Server thread/INFO]: [AureliumSkills] Loaded 17 languages in 3909ms
+[07:08:22] [Server thread/INFO]: [AureliumSkills] Loaded 30 pattern rewards and 0 level rewards
+[07:08:22] [Server thread/INFO]: [AureliumSkills] Loaded 78 Ability Options in 4ms
+[07:08:23] [Server thread/INFO]: [AureliumSkills] Loaded 6 menus
+[07:08:23] [Server thread/INFO]: [AureliumSkills] Loaded 32 loot entries in 4 pools and 2 tables
+[07:08:23] [Server thread/INFO]: [AureliumSkills] Loaded 3 blocked worlds.
+[07:08:23] [Server thread/INFO]: [AureliumSkills] Aurelium Skills has been enabled
+[07:08:23] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R3! Trying to find NMS support
+[07:08:23] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R3' loaded!
+[07:08:23] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AureliumSkills' to create a bStats instance!
+[07:08:23] [Server thread/INFO]: [rbl-core] Enabling rbl-core v1.1.1-indev
+[07:08:23] [Server thread/INFO]: [Vanillabosses] Enabling Vanillabosses v2.5.0
+[07:08:23] [Server thread/INFO]: [Vanilla Bosses] Vanilla Bosses plugin enabled! Check log file for warnings if you notice bugs or errors
+[07:08:23] [Server thread/INFO]: [VanillaBosses] Language Setting EN successfully enabled!
+[07:08:23] [Server thread/INFO]: [GodItems] Enabling GodItems v3.0.0-ALPHA2
+[07:08:23] [Server thread/INFO]: [GodItems] Made by MitromniZ and Cros_bow
+[07:08:23] [Server thread/INFO]: [GodItems] Bosses are not yet implemented into the new version of the plugin so they will not spawn
+[07:08:23] [Server thread/INFO]: [GodItems] The texture pack is only available if you download the plugin from our patreon page
+[07:08:23] [Server thread/INFO]: Starting GS4 status listener
+[07:08:23] [Server thread/INFO]: Thread Query Listener started
+[07:08:23] [Server thread/INFO]: JMX monitoring enabled
+[07:08:23] [Query Listener #1/INFO]: Query running on localhost:9898
+[07:08:23] [Server thread/INFO]: Running delayed init tasks
+[07:08:23] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[07:08:23] [Server thread/INFO]: [Skript] Loading variables...
+[07:08:23] [Server thread/INFO]: [Skript] Loaded 4 variables in 0.0 seconds
+[07:08:24] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[07:08:24] [Server thread/INFO]: [Skript]     No scripts were found, maybe you should write some ;)
+[07:08:24] [Server thread/INFO]: [Skript] Finished loading.
+[07:08:24] [Server thread/INFO]: Done (53.258s)! For help, type "help"
+[07:08:24] [Server thread/INFO]: *************************************************************************************
+[07:08:24] [Server thread/INFO]: This is the first time you're starting this server.
+[07:08:24] [Server thread/INFO]: It's recommended you read our 'Getting Started' documentation for guidance.
+[07:08:24] [Server thread/INFO]: View this and more helpful information here: https://docs.papermc.io/paper/next-steps
+[07:08:24] [Server thread/INFO]: *************************************************************************************
+[07:08:24] [Server thread/INFO]: Timings Reset
+[07:08:24] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] New update available! You are on version Beta 1.3.24, latest version is 2.1.5
+[07:08:24] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] Download it on Spigot:
+[07:08:24] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] https://spigotmc.org/resources/81069
+[07:08:24] [Craft Scheduler Thread - 8 - LevelledMobs/INFO]: [WARN] LevelledMobs: LevelledMobs Update Checker Notice:
+[07:08:24] [Craft Scheduler Thread - 8 - LevelledMobs/INFO]: [WARN] LevelledMobs: Your LevelledMobs version is outdated! Please update to v4.0.6 as soon as possible. (You're running v3.14.1)
+[07:08:24] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.0.1, you're on: 4.9.3-SNAPSHOT
+[07:08:24] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Latest public release is 1.6.11
+[07:08:24] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Your version is 1.6.7
+[07:08:24] [Craft Scheduler Thread - 9 - BetterStructures/WARN]: [BetterStructures] [BetterStructures] A newer version of this plugin is available for download!
+[07:08:24] [Craft Scheduler Thread - 5 - Vanillabosses/INFO]: [Vanillabosses] There is not a new update available.
+[07:08:27] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2545ms or 50 ticks behind
