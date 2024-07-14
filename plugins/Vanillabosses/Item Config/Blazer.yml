@@ -1,0 +1,19 @@
+Chestplate: Leather_Chestplate  #define the type of chestplate to be used for the item!
+dropChance: 0.1 #drops from the Blaze Boss!
+enableCraftingRecipe: true
+chanceToCombust: 0.333  # in %
+ticksOfFire: 140 # 20 ticks = 1 second, defines how long the attacker will be set on fire for
+AbilityCooldown: 2500 #in milliseconds, 1000 means 1 second
+Lore:
+  - Has a fiery aura
+
+recipeShape:
+  - "FNF"
+  - "BLB"
+  - "DBD"
+recipeIngredients:
+  - B:Blaze_Rod
+  - L:Leather_Chestplate
+  - N:Netherrack
+  - F:Flint_And_Steel
+  - D:Diamond

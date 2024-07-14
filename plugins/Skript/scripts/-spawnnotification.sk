@@ -1,0 +1,3 @@
+on command "spawn":
+    wait 1 seconds
+    send player title "&l&aWelcome!" with subtitle "&a&lTo spawn" for 5 seconds

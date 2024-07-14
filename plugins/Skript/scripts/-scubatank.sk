@@ -1,0 +1,8 @@
+command /givescubatank:
+    permission: give.scuba
+    trigger:
+        give player unbreakable iron chestplate named "&9Scuba Tank"
+
+on armor change: 
+    if event-item is iron chestplate named "&l&9Scuba Tank":
+        apply potion of water breathing 2 to player for 10 days

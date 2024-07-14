@@ -1,0 +1,55 @@
+version: v1.1
+enablePlugin: true
+settings:
+  prefix: '&7&lStoryline »'
+  enableSound: true
+  enableVault: true
+  autoSave: true
+  currency: $
+  storylinePrice: 2500.0
+  storylineSignPrice: 50.0
+  maxStoryLines: 10
+  maxStorylineCharacters: 50
+  maxStorylineIDCharacters: 24
+  storylineListFormat: '&3&l» &7&l{storyline}'
+  firstLineSign: '[Storyline]'
+  firstLineSignFormated: '&3&l[Storyline]'
+  storylineIDFormated: '&7&l{storyline}'
+  clickOnLineHoverMessage: '&7&lClick to {action}'
+  toEdit: '&a&ledit'
+  toView: '&e&lview'
+  createSound: ENTITY_PLAYER_LEVELUP
+  addSound: ENTITY_PLAYER_LEVELUP
+  setSound: ENTITY_PLAYER_LEVELUP
+  viewSound: ENTITY_EXPERIENCE_ORB_PICKUP
+  removeSound: UI_BUTTON_CLICK
+  noPermissionSound: ENTITY_VILLAGER_NO
+  defaultStoryline:
+  - '&3&lHey! I''m your new storyline!'
+  - '&7You can go ahead and edit me '
+  - '&7by: &f&l/SL set [storyline] [line] [text]'
+  - ''
+  - '&3&lGoodluck!'
+messages:
+  signCreatedMessage: '&a&lSUCCESS! &aYou''ve created a new storyline sign for &7&l{storyline}
+    &a!'
+  createdMessage: '&a&lSUCCESS! &aYou''ve created a new storyline &7&l{storyline}
+    &a!'
+  removedMessage: '&6&lSUCCESS! &aYou''ve removed the storyline &7&l{storyline} &a!'
+  setMessage: '&a&lSUCCESS! &aYou''ve set line {line} in &7&l{storyline} &a!'
+  addedMessage: '&a&lSUCCESS! &aYou''ve added new line &7({line}) &ain &7&l{storyline}
+    &a!'
+  viewMessage: '&eYou''re looking at &7&l{storyline} &eof &7&l{player}'
+  reloadMessage: '&aConfiguration files have been reloaded successfully!'
+  unknownCommand: '&c&lUnknown Command, &7please use &7&l/sl help'
+  notAvailable: '&c&lSORRY! &cThis option aren''t available currently.'
+  isntOwner: '&c&lSORRY! &cYou aren''t own this storyline.'
+  isOffline: '&c&lSORRY! &cThis player aren''t online currently.'
+  noPermission: '&c&lSORRY! &cYou do not have permission to do that.'
+  noMoneyMessage: '&c&lFAILED! &cYou don''t have enough money... &7(&a&l{needed}&7)'
+  noStorylines: '&c&lSORRY! &cYou aren''t own any storylines.'
+  outOfBoundaries: '&c&lFAILED! &cLine {line} out of boundaries!'
+  isntExistsMessage: '&c&lFAILED! &cThis storyline aren''t exists!'
+  existsMessage: '&c&lFAILED! &cThis storyline already exists!'
+  youReachedMaxMessage: '&c&lFAILED! &cYou reached the maximum amount of {x} &7(Maximum
+    {max})'

@@ -1,0 +1,18 @@
+armor:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3463
+    type: LEATHER_HELMET
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3463
+    type: LEATHER_CHESTPLATE
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3463
+    type: LEATHER_LEGGINGS
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    v: 3463
+    type: LEATHER_BOOTS
+charms: {}

@@ -1,0 +1,51 @@
+Bosses:
+
+  PluginLanguage: EN  # Currently implemented Languages: EN (English), GER (German), CN (Chinese),
+  #PL (Polish without special characters), PLS (Polish with special characters)
+  #In case the entered language is not implemented. it will default to English
+
+  LogLevel: WARNING #Can be INFO, WARNING or SEVERE depending on how much you want to know. Standard is warning.
+  SaveLog: true #if set to true removes the log file every time the plugin is started and replaces it with an empty one. if false, the old configs get saved to a logs folder
+
+  enableBossKilledMessage: true
+
+  enableBossesFromSpawners: true
+  enableBossesFromSpawnEggs: false
+
+  bossesGetGlowingPotionEffect: false # sets whether spawning bosses will have a glowing outline around them
+
+  NaturalBossesHaveBossBars: true #this set to true will give all bosses which spawn a boss bar. If set to false only respawning bosses will have boss bars
+  CommandBossesHaveBossBars: false
+  RespawningBossesHaveBossbars: true
+  EggBossesHaveBossBars: true
+
+  # The following 4 lines are for people who want to discourage autoclicking to farm mobs/bosses.
+  enableAntiAFKTeleports: false # If set to true mobs will have a chance to be teleported to the attacking player. If the player is afk the mob could kill the player. This should discourage from using autoclickers and afk farming mobs.
+  AntiAFKChance: 100   # 1 = 0.1% chance. 10 = 1% chance. after the AntiAFKHitLimit is reached this is the % chance to teleport the hit mob directly onto the player.
+  AntiAFKHitLimit: 15 #This is the amount of hits the player has to land on mobs until the Mob can teleport to them. Boss abilities are separate from this.
+  AntiAFKWarningMessage: "You should move a little more while hitting monsters, shouldn't you? \n AntiAFK Grinder Warning" #\n = new line
+
+  #optional, to use a command from this list add ':<numberOfCommand>' at the end of a 'worldsLocationsTimer'
+  # The numbers of commands start at 0. so to use the first command in the list below you have to use '0', to use the second one you use '1'
+  # <killer> to only apply this command to the killer
+  # <25> to get all players within a radius (doesn't have to be 25) (radius will have the killed boss at the center)
+  # @a to select all players on the server. This does not work with the /items command.
+  # <mostDamage> to input the player which did the most damage to the boss which died.
+  # <killedName> to input the Dead Bosses name. This should not be necessary often, but is possible. (possibly necessary to name items or put text in a book or so?)
+
+  # to disable OP players being able to see /give messages and /tp messages go into your server file and disable the broadcast-console-to-ops setting.
+  # for the /items command the only currently working syntax is /items <itemname> <killer>.
+
+  CommandsExecutedOnBossDeath:  # first command is an example of how to set an empty command. selecting '0' as a command for a boss with the command being empty will result in no command being executed.
+    - ""
+    - "give <10> minecraft:diamond 5 DELAY:5 CHANCE:0.5"   # in case you have essentials installed you may have to remove the 'minecraft:', aka just use the item name.
+
+# Boss type, name of the world, coordinates, respawn time in seconds, commands that are to be executed when the boss dies, whether the boss should actually spawn
+  RespawningBosses:
+    - "{\"type\":\"ZOMBIE\",\"worldName\":\"world\",\"x\":\"0.0\",\"y\":\"70.0\",\"z\":\"0.0\",\"respawnTime\":\"20\",\"commands\":[\"1\",\"2\"],\"enableBoss\":\"false\"}"
+
+  #Most things about the config will be explained inside the SkeletonBoss section! make sure to read carefully if you want to edit this file!
+
+Items:
+  DisableRepairAndEnchant: false   #if enabled this will prevent repair, combining and renaming of items added by this plugin (at an anvil)
+  CooldownMessage: "Cooldown: ? seconds" # Message a player receives as their action bar when using an item which has a cooldown. Question mark is placeholder for amount of seconds

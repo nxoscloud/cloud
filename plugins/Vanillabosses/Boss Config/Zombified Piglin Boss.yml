@@ -1,0 +1,35 @@
+enabled: true
+displayName: "The Butcher"
+displayNameColor: "#850000"
+showDisplayNameAlways: true
+DamageModifier: 1.0
+SpeedModifier: 1.0
+health: 100
+ArmorMaterial: GOLD # Possible accepted values: Leather; Gold; Iron; Diamond; Netherite
+spawnChance: 0.005
+killedMessage: "<killedName> was slain by <killer>"
+
+spawnWorlds:
+
+droppedItems:
+  - "{\"materialName\":\"GOLD_INGOT\",\"minAmount\":\"2\",\"maxAmount\":\"4\"}"
+
+droppedXP: 50
+
+onHitAbilities:
+  Jump:
+    Chance: 0.3
+    JumpStrengthMultiplier: 1.0
+  Pull:
+    Chance: 0.1
+    PullStrengthMultiplier: 1.0
+  Push:
+    Chance: 0.1
+    PushStrengthMultiplier: 1.0
+
+
+CommandToBeExecutedOnDeath: 0
+
+disableVanillaDrops: true
+
+spawnNaturally: true

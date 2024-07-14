@@ -1,0 +1,15 @@
+on place:
+    if event-block is tnt:
+        if {tntprime} is true:
+            cancel event
+            summon primed tnt
+
+command /tntprime [<text>]:
+    trigger:
+        if arg-1 is "on":
+            set {tntprime} to true
+            send "&aAutomatic Tnt Lighting is now &a&lEnabled"
+        if arg-1 is "off":
+            set {tntprime} to false
+            send "&cAutomatic Tnt Lighting is now &c&lDisabled"
+    

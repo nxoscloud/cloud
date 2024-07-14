@@ -1,0 +1,5 @@
+# The Resource needed to craft the slime boots. drops from boss slimes.
+MinDropped: 1
+MaxDropped: 4
+Lore:
+  - "Bouncy :P"

@@ -1,0 +1,8 @@
+# A list of all blocks to allow to be placed in mines
+# Empty list will result in all blocks being allowed to be placed
+blocks:
+- STONE
+- COBBLESTONE
+- APPLE
+# Map of block types to their weights to control how often they appear
+weights: {}

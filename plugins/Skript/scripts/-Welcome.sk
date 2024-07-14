@@ -1,0 +1,20 @@
+variables:
+    {TotalJoins} = 0 
+    {UniqueJoins} = 0
+
+on join:
+    if player has played before:
+        set join message to "&7[&a+&7] &a%player% Has joined"
+        add 1 to {TotalJoins}
+    else:
+        set join message to "&7[&a+&7] &a%player% Has joined for the first Time!"
+        add 1 to {UniqueJoins}
+        
+
+
+on leave:
+    set leave message to "&7[&4-&7]&4 %player% Has left &7☹"
+
+command /TotalJoins:
+    trigger:
+        send "<##c818d6>T<##c320d8>ʜ<##be29d9>ᴇ<##b931db>ʀ<##b539dc>ᴇ <##b041de>ʜ<##ab4adf>ᴀ<##a652e1>ᴠ<##a15ae2>ᴇ <##9c63e4>ʙ<##986be6>ᴇ<##9373e7>ᴇ<##8e7be9>ɴ <##8984ea>ᴀ <##848cec>ᴛ<##7f94ed>ᴏ<##7b9cef>ᴛ<##76a5f1>ᴀ<##71adf2>ʟ <##6cb5f4>ᴏ<##67bef5>ғ &4%{TotalJoins}% <##62c6f7>J<##5ecef8>ᴏ<##59d6fa>ɪ<##54dffb>ɴ<##4fe7fd>s" to player

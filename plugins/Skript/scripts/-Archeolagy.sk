@@ -1,0 +1,42 @@
+variables:
+    {redstoneShimmer::%player%} = true
+
+
+on script load:
+    set {_i1} to wooden pickaxe of efficiency 3 and unbreaking 2 named "<##543a00>Homeless Pickaxe"
+    set {_m1} to dirt named "<##543a00>Dirt Artifact" with lore "&8This is a <##543a00>Dirt Artifact &8" and "&8Wich is used for crafting the <##543a00>Homeless Pickaxe" and "&e⭐&8⭐⭐⭐⭐"
+    set {_m2} to redstone block named "<##db0925>Explosive Dynamite" with lore "&fUsed to construct the Explosive Pick"
+    set {_m3} to redstone dust named "<##4a0014>Redstone Artifact" with lore "&fUsed to make <##cf0000>Explosive Dynamite" and "&e⭐⭐⭐&8⭐⭐"
+    set {_i2} to diamond pickaxe of efficiency 4 and unbreaking 3 named "<##8f0719>Explosive Pickaxe" with lore "&8A 0.2%% Chance to combust" and "&e⭐⭐⭐&8⭐⭐"
+
+    
+    register new shaped recipe for {_i1} using {_m1}, {_m1}, {_m1}, air, stick, air, air, stick and air with id "HomelessPick" in group "custom_Picks"
+    register new shaped recipe for {_m2} using {_m3}, {_m3}, {_m3}, {_m3}, {_m3}, {_m3}, {_m3}, {_m3} and {_m3} with id "ExplosiveDynamite" in group "custom_PicksItems"
+    register new shaped recipe for {_i2} using {_m2}, {_m2}, {_m2}, air, stick, air, air, stick and air with id "ExplosivePick" in group "custom_Picks"
+
+on break:
+    if event-block is dirt:
+        chance of 0.4%:
+            drop 1 dirt named "<##543a00>Dirt Artifact" with lore "&8This is a <##543a00>Dirt Artifact &8" and "&8Wich is used for crafting the <##543a00>Homeless Pickaxe" and "&e⭐&8⭐⭐⭐⭐"
+            send "You have found a <##543a00>Dirt Artifact"
+
+on mine:
+    if event-block is redstone ore or Deepslate redstone ore:
+        chance of 0.9%:
+            drop redstone dust named "<##4a0014>Redstone Artifact" with lore "&fUsed to make <##cf0000>Explosive Dynamite" and "&e⭐⭐⭐&8⭐⭐"
+
+on break:
+    if name of player's tool is "<##8f0719>Explosive Pickaxe":
+        chance of 0.9%:
+            create an explosion of force 15 at event-block
+            strike lightning effect at event-location
+
+command /shimmer [<text>]:
+    trigger:
+        set {redstoneShimmer::%arg-1%} to true
+
+on mine of redstone ore:
+    if {redstoneShimmer::%player%} is true:
+        send "&8You &cShimmer &8as you see a red figure at the corner of your eye"
+        set {redstoneShimmer::%player%} to false
+        play sound "block.conduit.ambient" at volume 1 to player

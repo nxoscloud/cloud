@@ -1,0 +1,6 @@
+firstLocationSet: &aFirst location set!
+secondLocationSet: &aSecond location set!
+cancelPromptMessage: &cType '%canceltext%' to cancel.
+cancelText: cancel
+teleportDelay: &aPlease stand still for %seconds% seconds to teleport...
+teleportCancelled: &cTeleport cancelled!
