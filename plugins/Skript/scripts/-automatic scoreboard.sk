@@ -1,3 +1,0 @@
-on join:
-    wait 1 second
-    make player execute command "sb on"

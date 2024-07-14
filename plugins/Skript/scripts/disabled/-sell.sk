@@ -1,0 +1,21 @@
+
+command /sell:
+    trigger:
+        if player doesn't have wheat:
+            send "&cYou have nothing to sell!"
+        else:  
+            set {_wheat} to amount of wheat in player's inventory
+            add {_wheat} * 1 to {_total} 
+            remove all wheat from player
+            add {_total} to {coins::%player's uuid%}
+            if {_total} is 1:
+                send "&2[&aɢᴀʀᴅᴏʜɴ&2] &eSold all the wheat from you for a total of &8%{_total}% &eCoin&e! ⭐" to player
+                play sound "entity.experience_orb.pickup" with volume 1 and pitch 1 to player
+            else:
+                send "&2[&aɢᴀʀᴅᴏʜɴ&2] &eSold all the wheat from you for a total of &8%{_total}% &eCoins&e! ⭐" to player
+                play sound "entity.experience_orb.pickup" with volume 1 and pitch 1 to player
+                
+
+command /coins:
+    trigger:
+        send "%{coins::%player's uuid%}%" 

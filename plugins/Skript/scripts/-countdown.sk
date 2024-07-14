@@ -1,4 +1,0 @@
-on skript start:
-    while true = true:
-        execute console command "/holo edit countdown setline 2 %server_countdown_dd.MM.yyyy_01.01.2024%"
-        wait 1 second

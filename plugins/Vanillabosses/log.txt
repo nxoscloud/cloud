@@ -1,2 +1,2 @@
-Jul 14, 2024 7:11:42 AM me.shreb.vanillabosses.logging.VBLogger logToFile
+Jul 14, 2024 9:00:05 AM me.shreb.vanillabosses.logging.VBLogger logToFile
 WARNING: Boss declared but disabled. Check whether this one is still needed! line: {"worldName":"world","x":0,"y":70,"z":0,"respawnTime":20,"enableBoss":false,"commands":[1,2],"type":"ZOMBIE"}

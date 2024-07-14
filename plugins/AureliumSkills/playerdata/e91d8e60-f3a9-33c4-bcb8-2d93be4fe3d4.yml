@@ -8,13 +8,13 @@ skills:
     xp: 24.4
   mining:
     level: 1
-    xp: 84.40000000000035
+    xp: 84.60000000000035
   fishing:
     level: 1
     xp: 0.0
   excavation:
     level: 1
-    xp: 9.3
+    xp: 28.999999999999986
   archery:
     level: 1
     xp: 0.0
@@ -25,8 +25,8 @@ skills:
     level: 1
     xp: 41.0
   endurance:
-    level: 1
-    xp: 80.0
+    level: 2
+    xp: 11.0
   agility:
     level: 2
     xp: 22.0

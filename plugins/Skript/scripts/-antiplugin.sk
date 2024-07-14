@@ -1,4 +1,0 @@
-on command "pl":
-    if player is not op:
-        cancel event
-        send "&cYou are not permitted to that &c&lCommand"

@@ -1,5 +1,17 @@
 [
   {
+    "uuid": "e91d8e60-f3a9-33c4-bcb8-2d93be4fe3d4",
+    "name": "Kornphatthanan",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "ab67473b-a229-3964-be50-c96faf7cc4a0",
+    "name": "Neptune11",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "22ed8072-4ef6-4bd9-903f-8e43e5a74a61",
     "name": "Kornphatthanan",
     "level": 4,

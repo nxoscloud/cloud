@@ -1,0 +1,52 @@
+levels:
+  level-1:
+    level: 1
+    max-value: 15000
+    price: 7500
+    needed-permission: lighteconomy.bank.buy.level.1
+    title: '&7Bank Level &c#level#'
+    material: GOLD_INGOT
+    lore:
+      - '&7&m---&r&c●&7&m---&r &c&lBANK &7Level &c&lUPGRADE &7&m---&r&c●&7&m---&r'
+      - ' '
+      - '&cLeft Click &7to &cbuy &7this Level'
+      - '&7Price: &c#amount# &7#currency#'
+      - '&7New Limit: &c#limit# &7#currency#'
+      - ''
+gui:
+  title: '&c&lBANK &8| &7Upgrade Menu'
+  pages:
+    previous-page:
+      column: 2
+      row: 3
+      material: ARROW
+      displayname: '&cprevious Page'
+      lore: []
+    next-page:
+      column: 2
+      row: 5
+      material: ARROW
+      displayname: '&cnext Page'
+      lore: []
+    back:
+      column: 2
+      row: 4
+      material: REDSTONE
+      displayname: '&cback'
+      lore: []
+  other:
+    no-permission:
+      title: '&7Bank Level &c#level#'
+      glow: true
+      material: BARRIER
+      lore-extra: '&7IMPORTANT: &cYou dont have &4Permission &cto buy this &7!'
+    already-bought:
+      title: '&7Bank Level &c#level#'
+      glow: true
+      material: RAW_GOLD
+      lore-extra: '&7IMPORTANT: &aYou already &2own &athis Level &7!'
+    no-money:
+      title: '&7Bank Level &c#level#'
+      glow: false
+      material: BARRIER
+      lore-extra: '&7IMPORTANT: &4You dont have enought money&7!'

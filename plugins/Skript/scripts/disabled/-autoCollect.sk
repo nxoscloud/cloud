@@ -1,0 +1,3 @@
+on break:
+    cancel drops
+    give drops of block using player's tool to player

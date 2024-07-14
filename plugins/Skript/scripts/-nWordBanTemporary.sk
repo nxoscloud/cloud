@@ -1,3 +1,0 @@
-on chat:
-    if message contains "Nigga, nigger, niggas, niggers, niglets, neggers,":
-        execute console command "ban %player%"

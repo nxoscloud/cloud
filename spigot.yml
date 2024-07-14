@@ -12,7 +12,7 @@
 
 settings:
   debug: false
-  timeout-time: 60
+  timeout-time: 60000
   restart-on-crash: true
   restart-script: ./start.sh
   sample-count: 12

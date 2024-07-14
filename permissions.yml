@@ -1,0 +1,6 @@
+bukkit.command.version:
+    default: op
+bukkit.command.plugins:
+    default: op
+bukkit.command.help:
+    default: op
