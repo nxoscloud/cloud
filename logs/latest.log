@@ -353,3 +353,185 @@ You should always have at least the BasicAdapter loaded.
 [07:11:00] [Server thread/WARN]: [ViaVersion] and if you're still unsure, feel free to join our Discord-Server for further assistance.
 [07:11:00] [Server thread/INFO]: [Skript] Enabling Skript v2.8.0
 [07:11:00] [Server thread/INFO]: [Skript] You're currently running a custom Skript version. No updates will be automatically installed.
+[07:11:24] [Server thread/INFO]: [Skript] Loaded 232650 aliases in 23352ms
+[07:11:25] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[07:11:25] [Server thread/INFO]: [Storyline] Enabling Storyline v1.1
+[07:11:25] [Server thread/INFO]: [Storyline] [STDOUT] §f§r[Storyline] §a§l0 §rstories loaded.
+[07:11:25] [Server thread/WARN]: Nag author(s): '[reflexlabs]' of 'Storyline v1.1' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[07:11:25] [Server thread/ERROR]: Error occurred while enabling Storyline v1.1 (Is it up to date?)
+java.lang.NoClassDefFoundError: net/milkbowl/vault/economy/Economy
+	at me.reflexlabs.storyline.MainManager.setupEconomy(MainManager.java:64) ~[Storyline.jar:?]
+	at me.reflexlabs.storyline.MainManager.onEnable(MainManager.java:39) ~[Storyline.jar:?]
+	at me.reflexlabs.storyline.Storyline.onEnable(Storyline.java:20) ~[Storyline.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: net.milkbowl.vault.economy.Economy
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 15 more
+[07:11:25] [Server thread/INFO]: [Storyline] Disabling Storyline v1.1
+[07:11:25] [Server thread/INFO]: [Storyline] [STDOUT] [Storyline] plugin has been disabled.
+[07:11:25] [Server thread/INFO]: [LevelledMobs] Enabling LevelledMobs v3.14.1 b817
+[07:11:25] [Server thread/INFO]: LevelledMobs: Using NMS version v1_20_R3 for nametag support
+[07:11:25] [Server thread/INFO]: LevelledMobs: File Loader: Loading files...
+[07:11:25] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'rules.yml'...
+[07:11:26] [Server thread/INFO]: LevelledMobs: Current rules hash: 36ddd7d0952cd4bc9936f1bc81d179d5c711c76f50c74c29ece755c215d98822
+[07:11:26] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'settings.yml'...
+[07:11:26] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'messages.yml'...
+[07:11:26] [Server thread/INFO]: LevelledMobs: Listeners: Registering event listeners...
+[07:11:26] [Server thread/INFO]: LevelledMobs: Commands: Registering commands...
+[07:11:26] [Server thread/INFO]: LevelledMobs: Running misc procedures
+[07:11:26] [Server thread/INFO]: LevelledMobs: Tasks: Starting async nametag auto update task...
+[07:11:26] [Server thread/INFO]: LevelledMobs: File Loader: Loading file 'customdrops.yml'...
+[07:11:26] [Server thread/INFO]: LevelledMobs: Start-up complete (took 579ms)
+[07:11:26] [Server thread/INFO]: [rbl-papermake] Enabling rbl-papermake v1.0.6pm-1.1.2rv
+[07:11:26] [Server thread/INFO]: [SpawnLogic] Enabling SpawnLogic v1.0
+[07:11:26] [Server thread/INFO]: [SpawnLogic] SpawnLogic Enabled
+[07:11:26] [Server thread/INFO]: [spark] Enabling spark v1.10.34
+[07:11:26] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[07:11:26] [Server thread/INFO]: [spark] Starting background profiler...
+[07:11:27] [Server thread/INFO]: [BetterStructures] Enabling BetterStructures v1.6.7
+[07:11:27] [Server thread/INFO]: [BetterStructures]     ____       __  __            _____ __                  __                      
+[07:11:27] [Server thread/INFO]: [BetterStructures]    / __ )___  / /_/ /____  _____/ ___// /________  _______/ /___  __________  _____
+[07:11:27] [Server thread/INFO]: [BetterStructures]   / __  / _ \/ __/ __/ _ \/ ___/\__ \/ __/ ___/ / / / ___/ __/ / / / ___/ _ \/ ___/
+[07:11:27] [Server thread/INFO]: [BetterStructures]  / /_/ /  __/ /_/ /_/  __/ /   ___/ / /_/ /  / /_/ / /__/ /_/ /_/ / /  /  __(__  ) 
+[07:11:27] [Server thread/INFO]: [BetterStructures] /_____/\___/\__/\__/\___/_/   /____/\__/_/   \__,_/\___/\__/\__,_/_/   \___/____/
+[07:11:27] [Server thread/INFO]: [BetterStructures] Initialized version 1.6.7!
+[07:11:29] [Server thread/INFO]: [Typewriter] Enabling Typewriter v0.4.0
+[07:11:29] [Server thread/WARN]: [Typewriter] ProtocolLib is not enabled, Typewriter will not work without it. Shutting down...
+[07:11:29] [Server thread/INFO]: [Typewriter] Disabling Typewriter v0.4.0
+[07:11:29] [Server thread/ERROR]: Error occurred while disabling Typewriter v0.4.0
+java.lang.NoClassDefFoundError: com/comphenix/protocol/events/ListenerPriority
+	at me.gabber235.typewriter.interaction.ChatHistoryHandler.<init>(ChatHistoryHandler.kt:28) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter$onLoad$modules$1$19.invoke(Typewriter.kt:68) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter$onLoad$modules$1$19.invoke(Typewriter.kt:68) ~[typewriter.jar:?]
+	at org.koin.core.instance.InstanceFactory.create(InstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory.create(SingleInstanceFactory.kt:46) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory$get$1.invoke(SingleInstanceFactory.kt:53) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory$get$1.invoke(SingleInstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.mp.KoinPlatformTools.synchronized(KoinPlatformTools.kt:20) ~[typewriter.jar:?]
+	at org.koin.core.instance.SingleInstanceFactory.get(SingleInstanceFactory.kt:51) ~[typewriter.jar:?]
+	at org.koin.core.registry.InstanceRegistry.resolveInstance$koin_core(InstanceRegistry.kt:116) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.resolveValue(Scope.kt:246) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.resolveInstance(Scope.kt:231) ~[typewriter.jar:?]
+	at org.koin.core.scope.Scope.get(Scope.kt:210) ~[typewriter.jar:?]
+	at me.gabber235.typewriter.Typewriter.onDisableAsync(Typewriter.kt:259) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin$onDisable$1.invokeSuspend(SuspendingJavaPlugin.kt:49) ~[typewriter.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[typewriter.jar:?]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[typewriter.jar:?]
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onDisable(SuspendingJavaPlugin.kt:48) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:290) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:223) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:537) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at me.gabber235.typewriter.Typewriter.onEnableAsync(Typewriter.kt:88) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin$onEnable$1.invokeSuspend(SuspendingJavaPlugin.kt:38) ~[typewriter.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[typewriter.jar:?]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[typewriter.jar:?]
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38) ~[typewriter.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onEnable(SuspendingJavaPlugin.kt:37) ~[typewriter.jar:?]
+	at lirand.api.architecture.KotlinPlugin.onEnable(KotlinPlugin.kt:13) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: com.comphenix.protocol.events.ListenerPriority
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 52 more
+[07:11:29] [Server thread/ERROR]: Error occurred while enabling Typewriter v0.4.0 (Is it up to date?)
+java.lang.RuntimeException: Plugin Typewriter attempted to start a new coroutine session while being disabled. Dispatchers such as plugin.minecraftDispatcher and plugin.asyncDispatcher are using the BukkitScheduler, which is already disposed at this point of time. If you are starting a coroutine in onDisable, consider using runBlocking or a different plugin.mcCoroutineConfiguration.shutdownStrategy. See https://shynixn.github.io/MCCoroutine/wiki/site/plugindisable for details.
+	at com.github.shynixn.mccoroutine.bukkit.impl.MCCoroutineImpl.startCoroutineSession(MCCoroutineImpl.kt:43) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.impl.MCCoroutineImpl.getCoroutineSession(MCCoroutineImpl.kt:19) ~[typewriter.jar:?]
+	at com.github.shynixn.mccoroutine.bukkit.SuspendingJavaPlugin.onEnable(SuspendingJavaPlugin.kt:41) ~[typewriter.jar:?]
+	at lirand.api.architecture.KotlinPlugin.onEnable(KotlinPlugin.kt:13) ~[typewriter.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-497]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-497]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-497]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-497]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[07:11:29] [Server thread/INFO]: [AureliumSkills] Enabling AureliumSkills vBeta 1.3.24
+[07:11:29] [Server thread/INFO]: [AureliumSkills] Loaded 194 config options in 1 ms
+[07:11:29] [Server thread/INFO]: [AureliumSkills] Loaded 312 sources and 10 tags in 55ms
+[07:11:29] [Server thread/INFO]: [AureliumSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[07:11:30] [Server thread/INFO]: [AureliumSkills] Loading languages...
+[07:11:33] [Server thread/INFO]: [AureliumSkills] Loaded 17 languages in 3131ms
+[07:11:33] [Server thread/INFO]: [AureliumSkills] Loaded 30 pattern rewards and 0 level rewards
+[07:11:34] [Server thread/INFO]: [AureliumSkills] Loaded 78 Ability Options in 6ms
+[07:11:34] [Server thread/INFO]: [AureliumSkills] Loaded 6 menus
+[07:11:34] [Server thread/INFO]: [AureliumSkills] Loaded 32 loot entries in 4 pools and 2 tables
+[07:11:34] [Server thread/INFO]: [AureliumSkills] Loaded 3 blocked worlds.
+[07:11:34] [Server thread/INFO]: [AureliumSkills] Aurelium Skills has been enabled
+[07:11:34] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_20_R3! Trying to find NMS support
+[07:11:34] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_20_R3' loaded!
+[07:11:34] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AureliumSkills' to create a bStats instance!
+[07:11:34] [Server thread/INFO]: [rbl-core] Enabling rbl-core v1.1.1-indev
+[07:11:34] [Server thread/INFO]: [Vanillabosses] Enabling Vanillabosses v2.5.0
+[07:11:34] [Server thread/INFO]: [Vanilla Bosses] Vanilla Bosses plugin enabled! Check log file for warnings if you notice bugs or errors
+[07:11:34] [Server thread/INFO]: [VanillaBosses] Language Setting EN successfully enabled!
+[07:11:34] [Server thread/INFO]: [GodItems] Enabling GodItems v3.0.0-ALPHA2
+[07:11:34] [Server thread/INFO]: [GodItems] Made by MitromniZ and Cros_bow
+[07:11:34] [Server thread/INFO]: [GodItems] Bosses are not yet implemented into the new version of the plugin so they will not spawn
+[07:11:34] [Server thread/INFO]: [GodItems] The texture pack is only available if you download the plugin from our patreon page
+[07:11:35] [Server thread/INFO]: Starting GS4 status listener
+[07:11:35] [Server thread/INFO]: Thread Query Listener started
+[07:11:35] [Query Listener #1/INFO]: Query running on localhost:9898
+[07:11:35] [Server thread/INFO]: JMX monitoring enabled
+[07:11:35] [Server thread/INFO]: Running delayed init tasks
+[07:11:35] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[07:11:35] [Server thread/INFO]: [Skript] Loading variables...
+[07:11:35] [Server thread/INFO]: [Skript] Loaded 4 variables in 0.0 seconds
+[07:11:35] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[07:11:35] [Server thread/INFO]: [Skript]     No scripts were found, maybe you should write some ;)
+[07:11:35] [Server thread/INFO]: [Skript] Finished loading.
+[07:11:35] [Server thread/INFO]: Done (51.216s)! For help, type "help"
+[07:11:35] [Server thread/INFO]: Timings Reset
+[07:11:35] [Craft Scheduler Thread - 8 - LevelledMobs/INFO]: [WARN] LevelledMobs: LevelledMobs Update Checker Notice:
+[07:11:35] [Craft Scheduler Thread - 8 - LevelledMobs/INFO]: [WARN] LevelledMobs: Your LevelledMobs version is outdated! Please update to v4.0.6 as soon as possible. (You're running v3.14.1)
+[07:11:35] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] New update available! You are on version Beta 1.3.24, latest version is 2.1.5
+[07:11:35] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] Download it on Spigot:
+[07:11:35] [Craft Scheduler Thread - 10 - AureliumSkills/INFO]: [AureliumSkills] https://spigotmc.org/resources/81069
+[07:11:35] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Latest public release is 1.6.11
+[07:11:35] [Craft Scheduler Thread - 9 - BetterStructures/INFO]: [BetterStructures] Your version is 1.6.7
+[07:11:35] [Craft Scheduler Thread - 9 - BetterStructures/WARN]: [BetterStructures] [BetterStructures] A newer version of this plugin is available for download!
+[07:11:35] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.0.1, you're on: 4.9.3-SNAPSHOT
+[07:11:36] [Craft Scheduler Thread - 5 - Vanillabosses/INFO]: [Vanillabosses] There is not a new update available.
+[07:11:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2583ms or 51 ticks behind
